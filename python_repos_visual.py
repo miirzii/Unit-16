@@ -16,6 +16,7 @@ print(f"Complete results: {not response_dict['incomplete_results']}")
 # Process repository information.
 repo_dicts = response_dict['items']
 repo_links, stars, hover_texts = [], [], []
+
 for repo_dict in repo_dicts:
         repo_name = repo_dict['name']
         repo_url = repo_dict['html_url']
@@ -25,7 +26,7 @@ for repo_dict in repo_dicts:
 
         stars.append(repo_dict['stargazers_count'])
 
-    # Build hover texts.
+        # Build hover texts.
         owner = repo_dict['owner']['login']
         description = repo_dict['description']
         hover_text = f"{owner}<br />{description}"
