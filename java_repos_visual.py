@@ -1,3 +1,8 @@
+'''The name of this program is java_repos_visual.py (Lab17_asharif22-#2.py)
+    Author: Amiir Sharif
+    Date: 2025-05-10'''
+
+# This program visualizes the most-starred Java projects on GitHub.
 import requests
 import plotly.express as px
 
